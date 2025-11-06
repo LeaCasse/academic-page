@@ -1,7 +1,7 @@
 title: "Léa Cassé"
 name: "Léa Cassé"
-subtitle: "PhD | Quantum Machine Learning for Data Streams (QRU, QRB)"
-description: "Quantum re-uploading units, residual quantum blocks, time-series & risk forecasting."
+subtitle: "PhD | Quantum Machine Learning for Data Streams"
+description: "Quantum re-uploading units, time-series & risk forecasting."
 url: "https://leacasse.github.io"
 baseurl: "/academic-page"   # car ton repo s’appelle academic-page
 repository: "leacasse/academic-page"
@@ -10,8 +10,8 @@ locale: "fr-NZ"
 author:
   name: "Léa Cassé"
   avatar: "/images/lea.jpg"
-  bio: "PhD QML (Waikato & IP Paris). QRU/QRB, FNO downscaling, parametric insurance."
-  location: "Christchurch, NZ"
+  bio: "PhD candidate as part of the TAIAO project at the Artificial Intelligence Institute, University of Waikato (NZ) and École Polytechnique, IP Paris (France)."
+  location: "New Zealand and France"
   links:
     - label: "Google Scholar"
       icon: "ai ai-google-scholar"
