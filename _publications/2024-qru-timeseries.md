@@ -5,7 +5,8 @@ permalink: /publication/qru-timeseries/
 date: 2024-09-10
 venue: "University of Waikato & École Polytechnique (IP Paris)"
 authors: "Léa Cassé, Sabarikirishwaran Ponnambalam, Bernhard Pfahringer, Albert Bifet"
-paperurl: "/files/QRU.pdf"
+paperurl: "{{ site.baseurl }}/files/QRU.pdf"
+
 abstract: >
   We propose a single-qubit QRU architecture for time-series forecasting and streaming data.
   The model outperforms PQC, VQC, and QRB baselines on Mackey–Glass chaotic series and real river-level datasets,
