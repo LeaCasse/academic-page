@@ -3,7 +3,7 @@ name: "Léa Cassé"
 subtitle: "PhD | Quantum Machine Learning for Data Streams (QRU, QRB)"
 description: "Quantum re-uploading units, residual quantum blocks, time-series & risk forecasting."
 url: "https://leacasse.github.io"
-baseurl: ""   # si tu passes sur le repo username.github.io
+baseurl: "/academic-page"   # car ton repo s’appelle academic-page
 repository: "leacasse/academic-page"
 locale: "fr-NZ"
 # Sidebar
