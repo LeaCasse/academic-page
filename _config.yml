@@ -22,3 +22,22 @@ author:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/leacasse"
+collections:
+  publications:
+    output: true
+    permalink: /publication/:title/
+  talks:
+    output: true
+    permalink: /talk/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: single
