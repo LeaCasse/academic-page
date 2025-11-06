@@ -5,7 +5,8 @@ permalink: /publication/qru-calorimetry/
 date: 2024-02-15
 venue: "Artificial Intelligence Institute, University of Waikato & Institut Polytechnique de Paris"
 authors: "Léa Cassé, Bernhard Pfahringer, Albert Bifet, Frédéric Magniette"
-paperurl: "/files/Quantum_Re_Uploading_for_Calorimetry__Optimized_Architectures_with_Extended_Expressivity.pdf"
+paperurl: "{{ site.baseurl }}/files/Quantum_Re_Uploading_for_Calorimetry__Optimized_Expressivity.pdf"
+
 abstract: >
   We present a single-qubit Quantum Re-Uploading Unit (QRU) model applied to particle classification tasks in calorimetric experiments.
   The QRU achieves 98% accuracy on a new LHC-inspired dataset while remaining hardware-efficient for NISQ devices.
