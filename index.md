@@ -5,7 +5,7 @@ title: "Léa Cassé"
 author_profile: true
 
 header:
-  overlay_image: /images/banner.png
+  overlay_image: https://leacasse.github.io/academic-page/images/banner.png
   overlay_filter: "0.35"
   overlay_color: "#000"
 
@@ -20,7 +20,7 @@ actions:
     url: "/research/"
 
 feature_row:
-  - image_path: /images/icon-qru.png
+  - image_path: https://leacasse.github.io/academic-page/images/icon-qru.png
     alt: "QRU"
     title: "Quantum Re-Uploading Units"
     excerpt: "Expressivity & trainability of QRU circuits, frequency/Fourier characterization, architecture design under NISQ constraints."
@@ -28,7 +28,7 @@ feature_row:
     btn_label: "Research"
     btn_class: "btn--primary"
 
-  - image_path: /images/icon-stream.png
+  - image_path: https://leacasse.github.io/academic-page/images/icon-stream.png
     alt: "Streams"
     title: "Learning on Data Streams"
     excerpt: "Online prediction and temporal modeling under drift, with a focus on deployable and robust methods."
@@ -36,7 +36,7 @@ feature_row:
     btn_label: "Projects"
     btn_class: "btn--primary"
 
-  - image_path: /images/icon-risk.png
+  - image_path: https://leacasse.github.io/academic-page/images/icon-risk.png
     alt: "Risk"
     title: "Risk & Optimization"
     excerpt: "Hybrid QRU→QAOA pipelines, CVaR allocation, and decision-making under uncertainty for climate risk."
