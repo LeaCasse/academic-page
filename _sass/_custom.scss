@@ -1,0 +1,7 @@
+/* Reduce size of homepage feature_row icons */
+.feature__item img {
+  max-width: 100px;   /* ajuste ici si besoin: 80–120 */
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
