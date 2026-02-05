@@ -45,13 +45,11 @@ feature_row:
     btn_class: "btn--primary"
 ---
 
-## About (30 seconds)
-I am **Léa Cassé**, a PhD researcher (cotutelle **University of Waikato** × **Institut Polytechnique de Paris**) working on **Quantum Machine Learning for data streams**.
-My core focus is the **spectral theory and practical design of Quantum Re-Uploading Units (QRU)**, with applications to time-series prediction and risk modelling.
+## About
+**Léa Cassé**, PhD researcher (cotutelle **University of Waikato** × **Institut Polytechnique de Paris**) working on **Quantum Machine Learning for data streams**.
+Core focus is the **spectral theory and practical design of Quantum Re-Uploading Units (QRU)**, with applications to time-series prediction and risk modelling.
 
 {% include feature_row %}
-
----
 
 ## Featured publications
 <ul>
@@ -66,17 +64,3 @@ My core focus is the **spectral theory and practical design of Quantum Re-Upload
 </ul>
 
 <p><a class="btn btn--primary" href="{{ '/publications/' | relative_url }}">All publications</a></p>
-
----
-
-## Recent updates
-<ul>
-{% for post in site.posts limit:3 %}
-  <li>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    <small> — {{ post.date | date: "%Y-%m-%d" }}</small>
-  </li>
-{% endfor %}
-</ul>
-
-<p><a class="btn btn--primary" href="{{ '/posts/' | relative_url }}">All updates</a></p>
