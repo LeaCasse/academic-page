@@ -1,7 +1,22 @@
-/* Reduce size of homepage feature_row icons */
+/* ============================================================
+   Custom overrides for Léa Cassé academic website
+   ============================================================ */
+
+/* --- Homepage: feature_row icons (QRU / Streams / Risk) --- */
 .feature__item img {
-  max-width: 100px;   /* ajuste ici si besoin: 80–120 */
+  max-width: 90px;          /* taille des icônes (80–100 recommandé) */
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  display: block;
+}
+
+/* Optional: slightly soften very bright images */
+.feature__item img {
+  opacity: 0.95;
+}
+
+/* --- Optional: add breathing room between icon and text --- */
+.feature__item .archive__item-excerpt {
+  margin-top: 0.8rem;
 }
