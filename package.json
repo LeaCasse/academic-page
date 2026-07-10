@@ -1,10 +1,10 @@
 {
-  "name": "academic-pages",
+  "name": "leacasse-academic-site",
   "version": "0.8.1.1",
-  "description": "Academic Pages Mistakes Jekyll theme npm build scripts",
+  "description": "Academic website of Léa Cassé",
   "repository": {
     "type": "git",
-    "url": "https://github.com/academicpages/academicpages.github.io"
+    "url": "https://github.com/leacasse/leacasse.github.io"
   },
   "keywords": [
     "jekyll",
@@ -12,14 +12,13 @@
     "minimal"
   ],
   "contributors": [
-    "Michael Rose",
-    "Robert Zupko"
+    "Léa Cassé"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/academicpages/academicpages.github.io/issues"
+    "url": "https://github.com/leacasse/leacasse.github.io/issues"
   },
-  "homepage": "https://github.com/academicpages/academicpages.github.io",
+  "homepage": "https://leacasse.github.io/",
   "engines": {
     "node": ">= 0.10.0"
   },

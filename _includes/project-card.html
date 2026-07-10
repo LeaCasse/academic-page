@@ -1,0 +1,24 @@
+{% assign item = include.post %}
+{% assign icon = 'fa-diagram-project' %}
+{% if item.title contains 'EMG' %}{% assign icon = 'fa-wave-square' %}{% endif %}
+{% if item.title contains 'Flood' %}{% assign icon = 'fa-water' %}{% endif %}
+<article class="content-card project-card filter-card reveal-on-scroll"
+  data-search="{{ item.title | append: ' ' | append: item.status | append: ' ' | append: item.collaborators | append: ' ' | append: item.tags | strip_html | downcase | escape }}"
+  data-category="{{ item.status | downcase | escape }}">
+  <div class="project-card__icon" aria-hidden="true"><i class="fa-solid {{ icon }}"></i></div>
+  <div class="project-card__content">
+    <div class="content-card__topline">
+      <span class="status-badge{% if item.status contains 'Accepted' %} status-badge--accent{% endif %}">{{ item.status }}</span>
+      <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%Y" }}</time>
+    </div>
+    <h2 class="content-card__title"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
+    {% if item.collaborators %}<p class="content-card__authors">{{ item.collaborators }}</p>{% endif %}
+    {% if item.excerpt %}<div class="content-card__excerpt">{{ item.excerpt | markdownify }}</div>{% endif %}
+    {% if item.tags %}
+      <ul class="tag-list" aria-label="Topics">
+        {% for tag in item.tags limit:5 %}<li>{{ tag }}</li>{% endfor %}
+      </ul>
+    {% endif %}
+    <a class="text-link" href="{{ item.url | relative_url }}">Explore project <span aria-hidden="true">→</span></a>
+  </div>
+</article>

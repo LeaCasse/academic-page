@@ -2,35 +2,43 @@
 layout: archive
 title: "Publications"
 permalink: /publications/
-author_profile: true
+author_profile: false
+hide_title: true
+description: "Peer-reviewed papers, accepted technical papers, and preprints by Léa Cassé."
+redirect_from:
+  - /academic-page/publications/
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<div class="archive-intro reveal-on-scroll">
+  <p class="page-kicker">Research outputs</p>
+  <h1>Publications and accepted technical papers</h1>
+  <p>Peer-reviewed conference papers, accepted technical papers, and preprints on Quantum Re-Uploading Units, time-series learning, and hybrid quantum risk optimisation.</p>
+</div>
 
-{% include base_path %}
+<div class="filterable-archive" data-filter-root>
+  <div class="archive-tools reveal-on-scroll">
+    <label class="search-field">
+      <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+      <span class="sr-only">Search publications</span>
+      <input type="search" placeholder="Search titles, authors, venues, or topics…" data-filter-search>
+    </label>
+    <label class="select-field">
+      <span class="sr-only">Filter by publication status</span>
+      <select data-filter-select>
+        <option value="">All statuses</option>
+        <option value="accepted">Accepted</option>
+        <option value="published">Published</option>
+        <option value="preprint">Preprint</option>
+      </select>
+    </label>
+    <span class="archive-count" data-filter-count></span>
+  </div>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
+  <div class="publication-grid" data-filter-list>
+    {% assign publications = site.publications | sort: "date" | reverse %}
+    {% for post in publications %}
+      {% include publication-card.html post=post %}
     {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+  </div>
+  <p class="filter-empty" data-filter-empty hidden>No publication matches these filters.</p>
+</div>

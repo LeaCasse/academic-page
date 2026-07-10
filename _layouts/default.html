@@ -11,12 +11,18 @@ layout: compress
     {% include head/custom.html %}
   </head>
 
-  <body>
+  <body class="layout--{{ page.layout | default: 'default' }}{% if page.collection %} collection--{{ page.collection }}{% endif %}">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
     {{ content }}
+
+    <button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">
+      <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
 
     <div class="page__footer">
       <footer>
@@ -26,6 +32,5 @@ layout: compress
     </div>
 
     {% include scripts.html %}
-
   </body>
 </html>

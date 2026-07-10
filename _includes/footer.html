@@ -1,25 +1,29 @@
 {% include base_path %}
 
-{% if site.author.github or site.author.bitbucket or site.atom_feed.hide != true %}
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-    {% if site.author.github %}
-      <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-    {% endif %}
-    {% if site.author.bitbucket %}
-      <li><a href="https://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
-    {% endif %}
-    {% if site.atom_feed.hide != true %}
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-    {% endif %}
-  </ul>
-</div>
-{% endif %}
+<div class="footer-grid site-shell">
+  <div class="footer-brand">
+    <a class="footer-brand__name" href="{{ '/' | relative_url }}">Léa Cassé</a>
+    <p>Quantum Machine Learning for data streams, explainable AI, and hybrid quantum optimisation.</p>
+  </div>
 
-<div class="page__footer-copyright">
-  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated {{ "now" | date: '%Y-%m-%d' }}
+  <nav class="footer-nav" aria-label="Footer navigation">
+    <strong>Explore</strong>
+    <a href="{{ '/research/' | relative_url }}">Research</a>
+    <a href="{{ '/publications/' | relative_url }}">Publications</a>
+    <a href="{{ '/projects/' | relative_url }}">Projects</a>
+    <a href="{{ '/ml-freelance/' | relative_url }}">ML Freelance</a>
+  </nav>
+
+  <div class="footer-contact">
+    <strong>Connect</strong>
+    <a href="mailto:{{ site.author.email }}"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</a>
+    <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+    <a href="{{ site.author.orcid }}" target="_blank" rel="noopener"><i class="ai ai-orcid" aria-hidden="true"></i> ORCID</a>
+    <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+  </div>
+</div>
+
+<div class="footer-bottom site-shell">
+  <span>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</span>
+  <span><a href="{{ '/sitemap/' | relative_url }}">Sitemap</a> · Built with Jekyll and GitHub Pages</span>
 </div>

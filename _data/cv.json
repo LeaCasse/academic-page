@@ -1,152 +1,212 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Léa Cassé",
+    "label": "PhD Candidate in Quantum Machine Learning for Data Streams & Freelance AI/ML Consultant",
+    "email": "casse.lea@gmail.com",
+    "phone": "+33 6 89 22 42 22",
+    "website": "https://leacasse.github.io",
+    "summary": "PhD candidate in Quantum Machine Learning for Data Streams and freelance AI/ML consultant, focused on shallow variational circuits, QRU-based models, spectral analysis, explainable AI, and governed forecasting systems.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "",
+      "countryCode": "FR/NZ",
+      "region": "France / New Zealand"
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
         "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "username": "0009-0008-6633-4720",
+        "url": "https://orcid.org/0009-0008-6633-4720"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "leacasse",
+        "url": "https://github.com/leacasse"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Léa Cassé",
+        "url": "https://www.linkedin.com/in/léa-cassé-51b961215/"
       }
     ]
   },
-  "work": [],
-  "education": [
+  "work": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "company": "University of Waikato & École Polytechnique / IP Paris",
+      "position": "PhD Candidate in Quantum Machine Learning for Data Streams",
+      "startDate": "2024",
+      "endDate": "2027",
+      "summary": "QRU models for streaming time series, spectral/Fourier analysis, flood-risk forecasting, QAOA/CVaR allocation, and low-parameter NISQ experiments."
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
+      "company": "InvestMint Inc.",
+      "position": "AI / ML Research Consultant",
+      "startDate": "2026",
+      "endDate": "present",
+      "summary": "Semantic data contracts, forecasting evaluation, audit and provenance, XAI hooks, human-in-the-loop review, and reproducible Python/FastAPI-style prototypes."
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "company": "OMVIUS",
+      "position": "Natural Events Research Consultant",
+      "startDate": "2026",
+      "endDate": "present",
+      "summary": "Diagnostic design for natural-event regime shifts and pre-event signals, with an emphasis on reproducibility and interpretable outputs."
+    },
+    {
+      "company": "EMG gesture-classification collaboration",
+      "position": "XAI Research Collaborator",
+      "startDate": "2026",
+      "endDate": "present",
+      "summary": "Cross-day/domain-shift analysis of multichannel EMG classifiers using attribution methods and explanation-stability diagnostics."
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
+  "education": [
+    {
+      "institution": "University of Waikato & École Polytechnique / IP Paris",
+      "area": "Quantum Machine Learning for Data Streams",
+      "studyType": "PhD",
+      "startDate": "2024",
+      "endDate": "2027"
+    },
+    {
+      "institution": "Université de Montpellier",
+      "area": "Quantum Physics",
+      "studyType": "MSc, with honours",
+      "startDate": "2021",
+      "endDate": "2023"
+    },
+    {
+      "institution": "Université Paul Sabatier, Toulouse",
+      "area": "Advanced Fundamental Physics",
+      "studyType": "BSc, with honours",
+      "startDate": "2018",
+      "endDate": "2021"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Quantum ML",
+      "keywords": [
+        "Quantum data re-uploading",
+        "QRU",
+        "QAOA",
+        "Fourier and spectral diagnostics",
+        "PennyLane",
+        "Qiskit"
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "keywords": [
+        "PyTorch",
+        "scikit-learn",
+        "time series",
+        "data streams",
+        "reinforcement learning",
+        "explainable AI"
+      ]
+    },
+    {
+      "name": "Engineering",
+      "keywords": [
+        "Python",
+        "NumPy",
+        "pandas",
+        "FastAPI",
+        "Git",
+        "reproducible testing"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "French",
+      "fluency": "C2"
+    },
+    {
+      "language": "English",
+      "fluency": "C1"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "B1"
+    }
+  ],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Hybrid Quantum Risk Minimisation: A QRU-QAOA Pipeline for Spatial Flood Tail-Risk Allocation",
+      "publisher": "IEEE Quantum Week 2026 — QECS Technical Papers",
+      "releaseDate": "2026-07-06",
+      "website": "https://leacasse.github.io/publication/hybrid-quantum-risk-minimisation/",
+      "summary": "Accepted technical paper by Léa Cassé, Sabarikirishwaran Ponnambalam, Gregory Pearson, Nick Lim, Bernhard Pfahringer, and Albert Bifet."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "Quantum Reupload Units: A Scalable and Expressive Approach for Time Series Learning",
+      "publisher": "IEEE QCE 2025",
+      "releaseDate": "2025-09-01",
+      "website": "https://ieeexplore.ieee.org/document/11250260/",
+      "summary": "Single-qubit QRU architecture for time-series learning and spectral expressivity."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Quantum Re-Uploading for Calorimetry: Optimized Architectures with Extended Expressivity",
+      "publisher": "arXiv:2412.12397",
+      "releaseDate": "2024-12-16",
+      "website": "https://arxiv.org/abs/2412.12397",
+      "summary": "Systematic hyperparameter analysis of quantum data re-uploading for calorimetric particle identification."
     }
   ],
   "presentations": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
+      "name": "Hybrid Quantum Risk Minimisation: A QRU-QAOA Pipeline for Spatial Flood Tail-Risk Allocation",
+      "event": "IEEE Quantum Week 2026",
+      "date": "2026-09-13",
+      "location": "Toronto, Ontario, Canada",
+      "description": "Upcoming QECS technical-paper presentation during the 13–18 September 2026 conference."
     },
     {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
+      "name": "Quantum Reupload Units: A Scalable and Expressive Approach for Time Series Learning",
+      "event": "IEEE Quantum Week 2025",
+      "date": "2025-09-01",
+      "location": "Montréal, Canada",
+      "description": "Oral conference presentation."
     },
     {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
+      "name": "Quantum Parametric Insurance for Flood-Risk Forecasting",
+      "event": "Quantum World Congress",
+      "date": "2025-10-01",
+      "location": "Washington, DC, USA",
+      "description": "Presentation of the DelphiQ World Bank Climate Risk Challenge prototype."
     }
   ],
   "teaching": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
+      "course": "Mathematics and physics tutoring",
+      "institution": "Superprof and independent",
+      "date": "2019–present",
+      "role": "Private tutor",
+      "description": "Individual remote lessons in mathematics, physics, and quantum physics."
     },
     {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
+      "course": "French language teaching",
+      "institution": "Alliance Française, Montessori and Steiner schools",
+      "date": "2024–2025",
+      "role": "French teacher",
+      "description": "French lessons for adults and children in New Zealand."
     }
   ],
   "portfolio": [
     {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "name": "Explainable AI for Cross-Day EMG Gesture Classification",
+      "category": "Research project",
+      "date": "2026",
+      "url": "https://leacasse.github.io/project/xai-emg-gesture-classification/",
+      "description": "XAI analysis of multichannel EMG classification under cross-day and domain shift."
+    },
+    {
+      "name": "Hybrid Quantum Risk Minimisation for Spatial Flood Allocation",
+      "category": "Research project",
+      "date": "2026",
+      "url": "https://leacasse.github.io/project/hybrid-quantum-risk-minimisation/",
+      "description": "QRU–CVaR–QUBO–QAOA pipeline for spatial flood tail-risk allocation."
     }
   ]
 }

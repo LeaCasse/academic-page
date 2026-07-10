@@ -2,36 +2,41 @@
 layout: archive
 title: "Sitemap"
 permalink: /sitemap/
-author_profile: true
+author_profile: false
+redirect_from:
+  - /academic-page/sitemap/
 ---
 
-{% include base_path %}
+The machine-readable XML sitemap is available at [sitemap.xml]({{ '/sitemap.xml' | relative_url }}).
 
-A list of all the posts and pages found on the site. For you robots out there, there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.
+## Main pages
 
-<h2>Pages</h2>
-{% for post in site.pages %}
-  {% include archive-single.html %}
+- [About]({{ '/about/' | relative_url }})
+- [Research]({{ '/research/' | relative_url }})
+- [Publications]({{ '/publications/' | relative_url }})
+- [Talks]({{ '/talks/' | relative_url }})
+- [Projects]({{ '/projects/' | relative_url }})
+- [ML Freelance]({{ '/ml-freelance/' | relative_url }})
+- [Teaching]({{ '/teaching/' | relative_url }})
+- [CV]({{ '/cv/' | relative_url }})
+
+## Publications
+
+{% assign publications = site.publications | sort: "date" | reverse %}
+{% for post in publications %}
+- [{{ post.title }}]({{ post.url | relative_url }})
 {% endfor %}
 
-<h2>Posts</h2>
-{% for post in site.posts %}
-  {% include archive-single.html %}
+## Talks
+
+{% assign talks = site.talks | sort: "event_date" | reverse %}
+{% for post in talks %}
+- [{{ post.title }}]({{ post.url | relative_url }})
 {% endfor %}
 
-{% capture written_label %}'None'{% endcapture %}
+## Projects
 
-{% for collection in site.collections %}
-{% unless collection.output == false or collection.label == "posts" %}
-  {% capture label %}{{ collection.label }}{% endcapture %}
-  {% if label != written_label %}
-  <h2>{{ label }}</h2>
-  {% capture written_label %}{{ label }}{% endcapture %}
-  {% endif %}
-{% endunless %}
-{% for post in collection.docs %}
-  {% unless collection.output == false or collection.label == "posts" %}
-  {% include archive-single.html %}
-  {% endunless %}
-{% endfor %}
+{% assign projects = site.portfolio | sort: "date" | reverse %}
+{% for post in projects %}
+- [{{ post.title }}]({{ post.url | relative_url }})
 {% endfor %}

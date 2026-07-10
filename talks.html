@@ -2,15 +2,42 @@
 layout: archive
 title: "Talks and presentations"
 permalink: /talks/
-author_profile: true
+author_profile: false
+hide_title: true
+description: "Conference talks and project presentations by Léa Cassé."
+redirect_from:
+  - /academic-page/talks/
 ---
 
-{% if site.talkmap_link == true %}
+<div class="archive-intro reveal-on-scroll">
+  <p class="page-kicker">Talks &amp; presentations</p>
+  <h1>Conference talks and project presentations</h1>
+  <p>Presentations of QRU research, hybrid flood-risk work, and quantum-machine-learning prototypes.</p>
+</div>
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+<div class="filterable-archive" data-filter-root>
+  <div class="archive-tools reveal-on-scroll">
+    <label class="search-field">
+      <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+      <span class="sr-only">Search talks</span>
+      <input type="search" placeholder="Search talks, venues, or locations…" data-filter-search>
+    </label>
+    <label class="select-field">
+      <span class="sr-only">Filter by status</span>
+      <select data-filter-select>
+        <option value="">All presentations</option>
+        <option value="upcoming">Upcoming</option>
+        <option value="presented">Presented</option>
+      </select>
+    </label>
+    <span class="archive-count" data-filter-count></span>
+  </div>
 
-{% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+  <div class="talk-timeline" data-filter-list>
+    {% assign talks = site.talks | sort: "event_date" | reverse %}
+    {% for post in talks %}
+      {% include talk-card.html post=post %}
+    {% endfor %}
+  </div>
+  <p class="filter-empty" data-filter-empty hidden>No presentation matches these filters.</p>
+</div>

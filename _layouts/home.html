@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<main class="home-page" id="main-content">
+  <section class="home-hero" aria-labelledby="home-title">
+    <div class="home-hero__media" aria-hidden="true"></div>
+    <div class="home-hero__glow home-hero__glow--one" aria-hidden="true"></div>
+    <div class="home-hero__glow home-hero__glow--two" aria-hidden="true"></div>
+
+    <div class="site-shell home-hero__inner">
+      <div class="home-hero__copy reveal-on-scroll">
+        <p class="eyebrow"><span class="eyebrow__dot"></span> Quantum Machine Learning · Data Streams</p>
+        <h1 id="home-title">Léa Cassé</h1>
+        <p class="home-hero__role">PhD candidate &amp; freelance AI/ML consultant</p>
+        <p class="home-hero__summary">{{ page.excerpt }}</p>
+
+        <div class="home-hero__actions" aria-label="Primary links">
+          <a class="btn btn--primary btn--large" href="{{ '/research/' | relative_url }}">Explore my research <span aria-hidden="true">→</span></a>
+          <a class="btn btn--glass btn--large" href="{{ '/files/CV_Lea_Casse.pdf' | relative_url }}" target="_blank" rel="noopener">View CV <span class="sr-only">(opens in a new tab)</span></a>
+        </div>
+
+        <ul class="topic-chips" aria-label="Research topics">
+          <li>Quantum Re-Uploading Units</li>
+          <li>Time series</li>
+          <li>Explainable AI</li>
+          <li>Hybrid optimisation</li>
+        </ul>
+      </div>
+
+      <aside class="home-profile-card reveal-on-scroll" aria-label="Profile summary">
+        <div class="home-profile-card__portrait">
+          <img src="{{ '/images/lea.jpg' | relative_url }}" alt="Portrait of Léa Cassé" width="381" height="458" fetchpriority="high">
+        </div>
+        <div class="home-profile-card__body">
+          <p class="home-profile-card__label">Joint PhD programme</p>
+          <p class="home-profile-card__institution">University of Waikato<br><span>×</span> École Polytechnique / IP Paris</p>
+          <div class="home-profile-card__links">
+            <a href="mailto:{{ site.author.email }}" aria-label="Email Léa Cassé"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+            <a href="{{ site.author.orcid }}" target="_blank" rel="noopener" aria-label="ORCID profile"><i class="ai ai-orcid" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <a class="scroll-cue" href="#home-content" aria-label="Continue to page content"><span></span></a>
+  </section>
+
+  <div id="home-content" class="home-content site-shell">
+    {{ content }}
+  </div>
+</main>

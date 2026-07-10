@@ -2,22 +2,25 @@
 title: "Quantum Re-Uploading for Calorimetry: Optimized Architectures with Extended Expressivity"
 collection: publications
 permalink: /publication/qru-calorimetry/
-date: 2024-02-15
-venue: "Artificial Intelligence Institute, University of Waikato & Institut Polytechnique de Paris"
+date: 2024-12-16
+modified: 2026-01-31
+venue: "arXiv:2412.12397"
+status: "Preprint"
 authors: "Léa Cassé, Bernhard Pfahringer, Albert Bifet, Frédéric Magniette"
-paperurl: "{{ site.baseurl }}/files/Quantum_Re_Uploading_for_Calorimetry__Optimized_Expressivity.pdf"
-
-abstract: >
-  We present a single-qubit Quantum Re-Uploading Unit (QRU) model applied to particle classification tasks in calorimetric experiments.
-  The QRU achieves 98% accuracy on a new LHC-inspired dataset while remaining hardware-efficient for NISQ devices.
-  A complete Fourier and hyperparameter analysis demonstrates that QRUs are inherently more expressive than VQCs.
+paperurl: "/files/Quantum_Re_Uploading_for_Calorimetry__Optimized_Expressivity.pdf"
+externalurl: "https://arxiv.org/abs/2412.12397"
+citation: "L. Cassé, B. Pfahringer, A. Bifet, and F. Magniette, ‘Quantum Re-Uploading for Calorimetry: Optimized Architectures with Extended Expressivity,’ arXiv:2412.12397, 2024; revised 2026."
+excerpt: >-
+  A systematic study of single-qubit quantum data re-uploading for calorimetric
+  particle identification, examining circuit and training hyperparameters under
+  NISQ-oriented resource constraints.
+redirect_from:
+  - /academic-page/publication/qru-calorimetry/
 tags:
   - Quantum Machine Learning
-  - QRU
+  - Data Re-Uploading
   - Calorimetry
-  - Fourier Analysis
+  - Hyperparameter Optimisation
 ---
 
-**Summary:**  
-This work introduces a realistic single-qubit QRU benchmark for calorimetric particle identification.  
-It establishes a mathematical link between circuit depth, Fourier frequency support, and expressivity, showing that QRUs outperform classical and quantum baselines under severe qubit constraints.
+This work applies a compact single-qubit data re-uploading model to particle classification in calorimetric experiments. It evaluates feature mappings, circuit depth, rotation choices, input scaling, optimiser settings, and parameter budgets, with the aim of identifying configurations that remain practical for NISQ devices.

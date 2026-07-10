@@ -9,6 +9,8 @@ main:
     url: /talks/
   - title: "Projects"
     url: /projects/
+  - title: "ML Freelance"
+    url: /ml-freelance/
   - title: "Teaching"
     url: /teaching/
   - title: "CV"
