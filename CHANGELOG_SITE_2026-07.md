@@ -22,3 +22,14 @@
 - made optional MathJax, Plotly, and Mermaid assets load only when a page explicitly requests them;
 - added the previously missing local `page` layout, preventing pages that request `layout: page` from depending on an unavailable layout;
 - retained the existing research claims, project descriptions, publication records, talks, teaching content, and CV file.
+
+## Dark-only profile and content update
+
+- removed the two placeholder portfolio entries;
+- removed the LC masthead mark and the theme switcher;
+- locked the site to the dark visual theme;
+- replaced the profile photograph with the July 2026 portrait;
+- added the Quantum Machine Learning podcast project with its Spotify link;
+- clarified that the QRU time-series paper was published by IEEE at QCE25;
+- removed Frédéric Magniette from the supervision sentence on the About page while preserving the factual author list of the calorimetry publication.
+- removed the obsolete `Scrape Talk Locations` workflow to prevent unrelated failed Actions.

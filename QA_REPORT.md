@@ -1,31 +1,41 @@
 # QA report
 
-## Migration and content checks
+## Requested changes verified
 
-- parsed all YAML front matter successfully;
-- checked 32 front-matter documents and all explicit routes;
-- found no duplicate explicit permalinks;
-- confirmed every navigation item targets an existing page;
-- confirmed all internal page routes referenced by edited files exist;
-- confirmed all local image and PDF references used by edited pages exist;
-- confirmed `url`, empty `baseurl`, repository name, sitemap plugin, and redirect plugin remain configured for the root user site;
-- verified the replacement CV remains present at `files/CV_Lea_Casse.pdf`;
-- left publication, project, and talk source records unchanged during the visual refresh.
+- removed `_portfolio/portfolio-1.md` and `_portfolio/portfolio-2.html`;
+- removed the `LC` masthead mark while retaining a readable text brand on desktop and mobile;
+- removed the light/dark switcher and locked the document, browser metadata, runtime bundle, and Plotly integration to dark mode;
+- replaced `images/lea.jpg` with the supplied 714 × 736 portrait and updated intrinsic image dimensions;
+- added `_portfolio/2026-qml-podcast.md` with the supplied Spotify URL;
+- updated the QRU time-series publication to state that it was published by IEEE at QCE25;
+- removed Frédéric Magniette from the About-page supervision sentence;
+- retained Frédéric Magniette in the calorimetry paper’s author list because removing a genuine co-author would make the publication record inaccurate.
 
-## Visual and code checks
+## Repository cleanup
 
-- added a local `page` layout so every `layout: page` document resolves inside the repository;
-- checked Liquid block balancing across Markdown, HTML, YAML, layouts, and includes;
-- parsed the complete custom stylesheet with `tinycss2`: no stylesheet parse errors and no declaration errors;
-- checked stylesheet brace and parenthesis balancing;
-- validated `assets/js/site.js` with Node's syntax checker;
-- checked the main edited HTML fragments for duplicate IDs;
-- verified every Font Awesome class introduced by the refresh exists in the bundled Font Awesome variables;
-- checked the responsive navigation still exposes a single button to the existing greedy-navigation plugin;
-- kept content visible when enhancement JavaScript is unavailable;
-- added reduced-motion handling and keyboard access for the theme control;
-- made MathJax, Plotly, and Mermaid conditional instead of loading them on every page.
+The uploaded repository still contained template files from the original AcademicPages starter and duplicate legacy pages. These were removed because they could create duplicate routes, duplicate cards, or indexable placeholder content:
+
+- duplicate `_pages/` versions of the current root pages;
+- the obsolete duplicate QRU publication record with the same permalink;
+- sample blog posts;
+- obsolete duplicate talk records;
+- the obsolete `Scrape Talk Locations` workflow that was producing a failed GitHub Action;
+- placeholder teaching records.
+
+Internal migration, QA, and changelog files are now excluded from the generated public site.
+
+## Static validation
+
+- parsed 34 front-matter documents successfully;
+- checked 21 explicit permalinks and found no duplicates;
+- checked 55 local file references used by pages and layouts;
+- confirmed the requested Spotify URL is present;
+- confirmed the placeholder project titles and theme-toggle code are absent;
+- confirmed the profile image is a valid progressive RGB JPEG;
+- rebuilt `assets/js/main.min.js` from the edited source;
+- validated `assets/js/site.js`, `assets/js/_main.js`, and `assets/js/theme.js` with Node syntax checks;
+- confirmed the mobile masthead retains the `Léa Cassé` text after removal of the LC mark.
 
 ## Runtime build boundary
 
-A complete local Jekyll build could not be executed in the editing environment because the Jekyll/GitHub Pages gems were not installed and external RubyGems access was unavailable. The repository's GitHub Pages workflow performs the authoritative Jekyll build after push. The first workflow run remains the final runtime integration check.
+A complete local Jekyll build could not be run because Bundler/Jekyll gems were not installed and RubyGems DNS access was unavailable in the editing environment. The existing GitHub Pages workflow remains the authoritative runtime build. After pushing this version, the `Deploy Jekyll site to GitHub Pages` action should be checked for a green result.

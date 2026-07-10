@@ -70,5 +70,6 @@ The visual layer is intentionally local and lightweight:
 - `_layouts/home.html` provides the homepage hero and full-width structure;
 - `_includes/publication-card.html`, `project-card.html`, and `talk-card.html` provide reusable collection cards;
 - `assets/js/site.js` provides progressive reveal, archive filtering, reading progress, active section tracking, citation copying, and back-to-top behaviour.
+- the interface intentionally uses one permanent dark theme; there is no user-facing theme switcher.
 
 The site remains a static Jekyll site. All core content stays usable without the enhancement script, and no JavaScript framework or external font service is required.

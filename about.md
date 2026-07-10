@@ -13,10 +13,10 @@ redirect_from:
   <div class="page-hero__copy">
     <p class="page-kicker">About me</p>
     <h1>Quantum models for dynamic data, built with a physicist’s perspective</h1>
-    <p class="page-lead">I am a <strong>PhD candidate in Quantum Machine Learning for Data Streams</strong>, conducting a joint PhD between the <strong>University of Waikato</strong> in New Zealand and <strong>École Polytechnique / Institut Polytechnique de Paris</strong> in France. My research is supervised by <strong>Prof. Albert Bifet</strong>, <strong>Prof. Bernhard Pfahringer</strong>, and <strong>Dr. Frédéric Magniette</strong>.</p>
+    <p class="page-lead">I am a <strong>PhD candidate in Quantum Machine Learning for Data Streams</strong>, conducting a joint PhD between the <strong>University of Waikato</strong> in New Zealand and <strong>École Polytechnique / Institut Polytechnique de Paris</strong> in France. My research is supervised by <strong>Prof. Albert Bifet</strong> and <strong>Prof. Bernhard Pfahringer</strong>.</p>
   </div>
   <div class="page-hero__portrait">
-    <img src="{{ '/images/lea.jpg' | relative_url }}" alt="Portrait of Léa Cassé" width="381" height="458">
+    <img src="{{ '/images/lea.jpg' | relative_url }}" alt="Portrait of Léa Cassé" width="714" height="736">
   </div>
 </div>
 

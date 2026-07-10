@@ -4,15 +4,15 @@ title: "Projects"
 permalink: /projects/
 author_profile: false
 hide_title: true
-description: "Selected research projects in explainable AI, quantum forecasting, and hybrid quantum optimisation."
+description: "Selected projects in explainable AI, quantum forecasting, hybrid quantum optimisation, and QML science communication."
 redirect_from:
   - /academic-page/projects/
 ---
 
 <div class="archive-intro reveal-on-scroll">
   <p class="page-kicker">Selected projects</p>
-  <h1>Research projects from model understanding to forecast-to-decision systems</h1>
-  <p>Selected projects are listed below. Research pages distinguish between completed results, accepted work, and ongoing investigations.</p>
+  <h1>Projects from model understanding to forecast-to-decision systems and science communication</h1>
+  <p>Selected research and science-communication projects are listed below. Project pages distinguish between completed results, accepted work, and ongoing activities.</p>
 </div>
 
 <div class="filterable-archive" data-filter-root>

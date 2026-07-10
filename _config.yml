@@ -81,5 +81,8 @@ exclude:
   - package.json
   - package-lock.json
   - README.md
+  - CHANGELOG_SITE_2026-07.md
+  - MIGRATION_TO_ROOT.md
+  - QA_REPORT.md
   - scripts
   - vendor

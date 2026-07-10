@@ -4,7 +4,6 @@
   <div class="masthead__inner-wrap">
     <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
       <a class="site-brand persist" href="{{ '/' | relative_url }}" aria-label="Léa Cassé — homepage">
-        <span class="site-brand__mark" aria-hidden="true">LC</span>
         <span class="site-brand__text">
           <strong>{{ site.title }}</strong>
           <small>Quantum ML · Data Streams</small>
@@ -38,11 +37,6 @@
             <a href="{{ domain }}{{ link.url }}"{% if is_active %} aria-current="page"{% endif %}>{{ link.title }}</a>
           </li>
         {% endfor %}
-        <li id="theme-toggle" class="masthead__menu-item masthead__theme-toggle persist tail">
-          <a role="button" tabindex="0" aria-label="Toggle light and dark theme" title="Toggle theme">
-            <i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i>
-          </a>
-        </li>
       </ul>
       <ul class="hidden-links hidden"></ul>
     </nav>

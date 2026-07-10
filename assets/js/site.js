@@ -112,14 +112,6 @@
   });
 
 
-  const themeControl = document.querySelector("#theme-toggle a[role='button']");
-  themeControl?.addEventListener("keydown", (event) => {
-    if (event.key === "Enter" || event.key === " ") {
-      event.preventDefault();
-      themeControl.click();
-    }
-  });
-
   // Keep the navigation toggle state accessible when the legacy greedy-nav plugin acts on it.
   const navToggle = document.querySelector(".greedy-nav__toggle");
   if (navToggle) {

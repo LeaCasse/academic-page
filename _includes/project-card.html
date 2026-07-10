@@ -2,6 +2,7 @@
 {% assign icon = 'fa-diagram-project' %}
 {% if item.title contains 'EMG' %}{% assign icon = 'fa-wave-square' %}{% endif %}
 {% if item.title contains 'Flood' %}{% assign icon = 'fa-water' %}{% endif %}
+{% if item.title contains 'Podcast' %}{% assign icon = 'fa-podcast' %}{% endif %}
 <article class="content-card project-card filter-card reveal-on-scroll"
   data-search="{{ item.title | append: ' ' | append: item.status | append: ' ' | append: item.collaborators | append: ' ' | append: item.tags | strip_html | downcase | escape }}"
   data-category="{{ item.status | downcase | escape }}">

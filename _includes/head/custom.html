@@ -1,5 +1,10 @@
 {% include base_path %}
 
+<script>
+  document.documentElement.setAttribute('data-theme', 'dark');
+  try { window.localStorage.setItem('theme', 'dark'); } catch (error) { /* storage may be unavailable */ }
+</script>
+
 <link rel="stylesheet" href="{{ '/assets/css/academicons.css' | relative_url }}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/apple-touch-icon-180x180.png' | relative_url }}">
 <link rel="icon" type="image/svg+xml" href="{{ '/images/favicon.svg' | relative_url }}">
@@ -7,6 +12,6 @@
 <link rel="icon" type="image/png" href="{{ '/images/favicon-192x192.png' | relative_url }}" sizes="192x192">
 <link rel="manifest" href="{{ '/images/manifest.json' | relative_url }}">
 <link rel="icon" href="{{ '/images/favicon.ico' | relative_url }}">
-<meta name="theme-color" content="#16324f">
-<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#07131f">
+<meta name="color-scheme" content="dark">
 <meta name="google-site-verification" content="XUQ1Nro4ELp1rPJ4Dh8PUlN91n6v9Tujo4XZxI8CCAQ">
